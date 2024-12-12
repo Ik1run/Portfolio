@@ -1,0 +1,11 @@
+.socials-icon:hover svg {
+    fill: rgb(0, 174, 255);
+}
+
+.li-items a:hover{
+    color: white !important;
+}
+
+.li-items a:hover i{
+    color: rgb(0, 174, 255);
+}
