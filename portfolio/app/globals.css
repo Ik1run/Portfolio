@@ -75,6 +75,7 @@ html:has(.page) {
   transition: all 0.3s;
   color: white;
   margin-top: 2px; /* kleine extra spacing */
+  margin-bottom: 15px;
 }
 
 .nav-socials .cv-button:hover {

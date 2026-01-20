@@ -6,18 +6,17 @@ export default function Portfolio() {
   const projects = [
     {
       id: 1,
-      title: 'Project 1',
-      description: 'Description of your first project',
-      image: '/projects/project1.jpg', // add your own images
-      link: 'https://github.com/Ik1run/project1',
+      title: 'Cat Food CSS Practice Site',
+      description: 'A small website practice using only HTML and CSS to create a cat food themed site.',
+      image: '/projects/CatSite.png', // add your own images
+      link: 'https://ik1run.github.io/CatfoodCSSPrac/',
       color: '#8400ff'
     },
     {
       id: 2,
-      title: 'Project 2',
-      description: 'Description of your second project',
-      image: '/projects/project2.jpg',
-      link: 'https://github.com/Ik1run/project2',
+      title: 'Punisho',
+      description: 'Small sanction app made for local use, built with PHP, Bootstrap & MySQL.',
+      image: '/projects/Punisho.png',
       color: '#ff007c'
     },
     {
@@ -28,7 +27,14 @@ export default function Portfolio() {
       link: 'https://github.com/Ik1run/project3',
       color: '#00fffa'
     },
-    // Add more projects...
+    {
+      id: 4,
+      title: 'Project 4',
+      description: 'Description of your fourth project',
+      image: '/projects/project4.jpg',
+      link: 'https://github.com/Ik1run/project4',
+      color: '#ffdd66'
+    },
   ];
 
   return (
