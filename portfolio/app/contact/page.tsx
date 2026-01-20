@@ -50,17 +50,17 @@ export default function Contact() {
           
           <div className="contact-details">
             <div className="contact-item">
-              <span className="contact-icon">📞</span>
+              <span className="contact-icon"><img src="/Phone.svg" alt="Phone icon" width={30} height={30} /></span>
               <span>+31 6 23965574</span>
             </div>
             
             <div className="contact-item">
-              <span className="contact-icon">✉️</span>
-              <span>davivsmit@gmail.com</span>
+              <span className="contact-icon"><img src="/Mail.png" alt="Mail icon" width={30} height={30} /></span>
+              <span>davixsmit@gmail.com</span>
             </div>
             
             <div className="contact-item">
-              <span className="contact-icon">👤</span>
+              <span className="contact-icon"><img src="/X.svg" alt="X icon" width={30} height={30} /></span>
               <span>@Nyaki</span>
             </div>
           </div>
