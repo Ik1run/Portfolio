@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 interface Project {
@@ -31,7 +32,13 @@ export default function ChromaGrid({ projects }: ChromaGridProps) {
         >
           {project.image && (
             <div className="chroma-card-image">
-              <img src={project.image} alt={project.title} />
+              <Image 
+                src={project.image} 
+                alt={project.title}
+                fill
+                style={{ objectFit: 'cover' }}
+                sizes="(max-width: 640px) 100vw, (max-width: 968px) 50vw, 33vw"
+              />
             </div>
           )}
           <div className="chroma-card-content">

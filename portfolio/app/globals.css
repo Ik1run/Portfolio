@@ -1033,12 +1033,12 @@ html:has(.portfolio-page) {
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 16px;
+  position: relative;
 }
 
 .chroma-card-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .chroma-card-content {

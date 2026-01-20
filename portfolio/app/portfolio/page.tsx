@@ -8,7 +8,7 @@ export default function Portfolio() {
       id: 1,
       title: 'Project 1',
       description: 'Description of your first project',
-      image: '/projects/project1.jpg', // voeg je eigen afbeeldingen toe
+      image: '/projects/project1.jpg', // add your own images
       link: 'https://github.com/Ik1run/project1',
       color: '#8400ff'
     },
@@ -28,7 +28,7 @@ export default function Portfolio() {
       link: 'https://github.com/Ik1run/project3',
       color: '#00fffa'
     },
-    // Voeg meer projecten toe...
+    // Add more projects...
   ];
 
   return (
