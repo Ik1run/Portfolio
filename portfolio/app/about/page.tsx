@@ -39,7 +39,10 @@ export default function About() {
         <section className="about-bio">
           <h1>Bio</h1>
           <p>
-            Hi, I&apos;m Davy Smit, a creative technologist who loves turning ideas into polished digital experiences. I build fast, intuitive, and scalable applications. 
+            Hi, I’m Davy Smit, a creative technologist who loves turning ideas into polished digital experiences. 
+            I design and build fast, intuitive, and scalable applications where technology and creativity come together.
+            I’m driven by curiosity and a desire to improve, always exploring new tools and technologies to create digital products that are not only functional, 
+            but meaningful and enjoyable to use.
           </p>
         </section>
 
