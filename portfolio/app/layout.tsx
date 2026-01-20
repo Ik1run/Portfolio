@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 import "./globals.css";
 
@@ -6,6 +8,10 @@ export default function RootLayout({
 }: {
   children:  React.ReactNode;
 }) {
+  const handleDownload = () => {
+    window.open('/CV.pdf', '_blank');
+  };
+
   return (
     <html lang="nl">
       <body>
@@ -26,6 +32,10 @@ export default function RootLayout({
             <a href="https://linkedin.com/in/davy-smit" target="_blank" rel="noopener noreferrer">
               <img src="/Linkedin.svg" alt="LinkedIn" width={20} height={20} />
             </a>
+            <button className="cv-button" onClick={handleDownload}>
+              <span className="cv-icon">📄</span>
+              <span className="cv-text">Show CV</span>
+            </button>
           </div>
         </header>
         {children}
