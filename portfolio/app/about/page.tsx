@@ -71,9 +71,9 @@ export default function About() {
                 <div className="timeline-dot"></div>
                 <div className="timeline-year">2020</div>
                 <div className="timeline-card">
-                  <h3>Media Vormgeving</h3>
+                  <h3>Graphic Designer</h3>
                   <p className="timeline-level">Niveau 4</p>
-                  <p className="timeline-description">Grafisch vormgeven en multimedia design</p>
+                  <p className="timeline-description">Designing posters and multimedia content</p>
                 </div>
               </div>
 
@@ -84,7 +84,7 @@ export default function About() {
                 <div className="timeline-card">
                   <h3>Software Developer</h3>
                   <p className="timeline-level">Niveau 4</p>
-                  <p className="timeline-description">Full-stack development en softwareontwikkeling</p>
+                  <p className="timeline-description">Full-stack development & software dev.</p>
                 </div>
               </div>
 
@@ -93,7 +93,7 @@ export default function About() {
                 <div className="timeline-dot timeline-dot-current"></div>
                 <div className="timeline-year">2024</div>
                 <div className="timeline-card">
-                  <h3>Stage ICT@work</h3>
+                  <h3>Internship ICT@work</h3>
                   <p className="timeline-level">Internship</p>
                   <p className="timeline-description">ASP. NET webapp en . NET MAUI app development</p>
                 </div>

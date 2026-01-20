@@ -15,7 +15,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-image">
           <Image
-            src="/Selfie.png"
+            src="/ProFotoEdit.png"
             alt="Davy Smit"
             width={300}
             height={300}
@@ -26,8 +26,7 @@ export default function Home() {
         <div className="hero-text">
           <h1>Davy Smit</h1>
           <p>
-            I design and build applications where<br />
-            creativity meets code. 
+            I design and build applications where creativity meets code. I turn ideas into polished digital products through clean design, thoughtful interactions, and well-crafted code.
           </p>
           <button className="about-me-button" onClick={handleAboutClick}>
             About Me
