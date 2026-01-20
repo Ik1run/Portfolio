@@ -49,11 +49,15 @@ html:has(.page) {
 }
 
 .nav-socials {
-  gap: 15px; /* GROTER - was 10px */
-  display:  flex;
-  align-items:  center;
-  justify-content:  space-between;
-  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
 }
 
 /* CV BUTTON IN HEADER */
@@ -61,7 +65,7 @@ html:has(.page) {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.2rem;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 6px;
@@ -69,7 +73,8 @@ html:has(.page) {
   font-size: 0.85rem;
   transition: all 0.3s;
   color: white;
-  margin-left: 8px;
+  width: 100%;
+  justify-content: center;
 }
 
 .nav-socials .cv-button:hover {
@@ -118,16 +123,25 @@ html:has(.page) {
 
 .hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 80px 120px;
-  margin-top: 50px;
+  justify-content: center;
+  padding: 40px 120px;
+  margin-top: 0;
+  gap: 30px;
+  text-align: center;
 }
 
 .hero-text h1 {
   font-size: 85px;      
   font-weight: 500;
   margin-bottom: 24px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-text p {
@@ -144,6 +158,10 @@ html:has(.page) {
 }
 
 /* Image */
+.hero-image {
+  order: -1;
+}
+
 .hero-image img {
   border-radius:  50%;
   object-fit: cover;
@@ -922,4 +940,65 @@ html:has(.portfolio-page) {
     margin-top: 3rem;
     text-align: left;
   }
+}
+
+/* ============================================ */
+/* ABOUT ME BUTTON ANIMATION */
+/* ============================================ */
+
+@keyframes wiggle-pulse {
+  0%, 100% { 
+    transform: rotate(0deg) scale(1);
+    background-color: white;
+    border-color: #ccc;
+  }
+  10% { 
+    transform: rotate(-5deg) scale(1.05);
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+    color: white;
+  }
+  20% { 
+    transform: rotate(5deg) scale(1.05);
+  }
+  30% { 
+    transform: rotate(-5deg) scale(1.05);
+  }
+  40% { 
+    transform: rotate(5deg) scale(1.05);
+  }
+  50% { 
+    transform: rotate(0deg) scale(1);
+    background-color: white;
+    border-color: #ccc;
+    color: #1a1a1a;
+  }
+}
+
+.about-me-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 2rem;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: #1a1a1a;
+  margin-top: 20px;
+  animation: wiggle-pulse 2s ease-in-out;
+  animation-delay: 0.5s;
+}
+
+.about-me-button:hover {
+  background-color: #4a90e2;
+  border-color: #4a90e2;
+  color: white;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+  transform: translateY(-2px);
 }
